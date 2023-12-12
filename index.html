@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <style>
+      .tabs {
+        overflow: hidden;
+        background-color: #f2f2f2;
+      }
+
+      .tablinks {
+        background-color: #ddd;
+        float: left;
+        border: 1px solid #ccc;
+        outline: none;
+        cursor: pointer;
+        padding: 10px 15px;
+      }
+
+      .tablinks:hover {
+        background-color: #ccc;
+      }
+
+      .tablinks.active {
+        background-color: #fff;
+        border-bottom: 1px solid #fff;
+      }
+
+      .tabcontent {
+        display: none;
+        padding: 20px;
+      }
+
+      .tabcontent h3 {
+        margin-top: 0;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden; /* Pour éviter les débordements */
+        position: relative;
+      }
+
+      /* Style pour le fond de page */
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden; /* Pour éviter les débordements */
+        position: relative;
+        background-color: #ffffff; /* Couleur de fond par défaut */
+      }
+
+      /* Style pour les cercles */
+      .cercle {
+        position: absolute;
+        border-radius: 50%;
+        opacity: 0.7;
+      }
+
+      .centered-image {
+        text-align: center;
+        padding: 5px; /* Espacement intérieur plus petit */
+        border: 2px solid white; /* Bordure noire de 2px */
+      }
+
+      .centered-image img {
+        width: 450px; /* Largeur de l'image */
+        height: auto; /* Hauteur automatique pour conserver les proportions */
+        display: block;
+        margin: 0 auto; /* Centre l'image horizontalement */
+      }
+      #monBouton {
+        position: absolute;
+        bottom: 10px;
+        width: 150px;
+        height: 40px;
+        background-color: black;
+        color: white;
+        padding: 8px 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 14px;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <title>Ecriture numérique </title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="tabs">
+      <button class="tablinks" onclick="openTab(event, 'Introduction')">
+        Introduction
+      </button>
+      <button class="tablinks" onclick="openTab(event, 'Developpement')">
+        Développement
+      </button>
+      <button class="tablinks" onclick="openTab(event, 'conclusion')">
+        Conclusion
+      </button>
+      <button class="tablinks" onclick="openTab(event, 'sources')">
+        Sources
+      </button>
+    </div>
+
+    <div id="Introduction" class="tabcontent">
+      <h3>Introduction</h3>
+      <p>
+        La révolution numérique a profondément remodelé notre société,
+        engendrant des changements majeurs dans des domaines tels que la
+        culture, l'économie, la science et l'éducation (Cardon, 2019, p. 2-9).
+        En matière éducative, cette transformation a créé de nombreux défis et
+        nécessité des ajustements pour s'adapter à l'écriture et à la lecture
+        numériques. Cela souligne l'importance cruciale des enjeux pédagogiques
+        face à l'émergence de nouvelles techniques d'écriture et de lecture.
+        Notre objectif dans cette étude est d'analyser brièvement les défis et
+        adaptations liés à la pratique de la lecture et de l'écriture dans un
+        contexte numérique, tout en proposant des solutions à ces défis.
+      </p>
+    </div>
+
+    <div id="Developpement" class="tabcontent">
+      <h3>Développement</h3>
+      <p>
+        L'écriture numérique soulève un double défi pédagogique, touchant à la
+        fois l'apprentissage et l'enseignement. Elle requiert la maîtrise de
+        compétences techniques ainsi que la compréhension des nouvelles
+        possibilités offertes par le numérique. Selon Lacelle, l'écriture
+        numérique se caractérise par des aspects tels que l'hypertextualité, un
+        design adapté, l'interactivité, la multimodalité et la collaboration.
+        Bien que cette transition représente un défi d'adaptation, il est
+        crucial de souligner que ce changement favorise la créativité et le
+        développement de l'intelligence collective des apprenants (Lacelle,
+        2016, p. 3).
+      </p>
+      <p>
+        <br />
+        La transition vers la lecture à l'ère numérique impose des ajustements
+        face à des contraintes telles que les troubles de l'attention et le
+        phénomène du survol. Contrairement aux habitudes de lecture
+        traditionnelles, la lecture sur des supports numériques, selon le type
+        de support, est marquée par une forte présence de modalités diverses et
+        une interactivité constante, ce qui peut favoriser les difficultés
+        d'attention. Ce contexte encourage souvent une lecture superficielle et
+        évasive chez le lecteur (Kordoni, 2021).<br />
+      </p>
+    </div>
+
+    <div id="conclusion" class="tabcontent">
+      <h3>Conclusion</h3>
+      <p>
+        Pour résoudre le défi pédagogique soulevé par l'essor de l'écriture
+        numérique, le système éducatif devrait mettre en place un programme de
+        littératie numérique intégrant les évolutions futures du domaine
+        numérique. Il est également essentiel de considérer les questions
+        philosophiques liées à nos pratiques de lecture et d'écriture dans le
+        monde numérique.
+      </p>
+    </div>
+    <div id="sources" class="tabcontent">
+      <h3>Sources</h3>
+      <p> 
+  <ol>
+    <li>Cardon, Dominique. « Introduction. Codeur, décodeur ». Culture numérique, Presses de Sciences Po, 
+2019, p. 5-13. Cairn.info, https://www.cairn.info/culture-numerique--9782724623659-p-5.htm
+</li>
+   <br> <li>Kordoni, Angeliki. « LITTÉRATIES NUMÉRIQUES ET TEXTES MULTIMODAUX : L’ÉCRITURE CRÉATIVE 
+COLLABORATIVE EN CLASSE DE FLE ». Revue de recherches en littératie médiatique multimodale, vol. 
+13, 2021. www.erudit.org, https://doi.org/10.7202/1077708ar</li><Br/>
+
+    <li>Lacelle, Nathalie, et Monique Lebrun. « LA FORMATION À L’ÉCRITURE NUMÉRIQUE : 20 
+RECOMMANDATIONS POUR PASSER DU PAPIER À L’ÉCRAN ». Revue de recherches en littératie 
+médiatique multimodale, vol. 3, 2016. www.erudit.org, https://doi.org/10.7202/1047131ar.</li>
+    
+  </ol></p>
+    </div>
+    <div class="centered-image">
+      <img
+        src="https://demoniak.ch/wp-content/uploads/2014/02/pixelpoint-on-ipad.jpg"
+        alt="Description de l'image"
+      />
+    </div>
+    <button id="monBouton">Cliquez ici</button>
+
+    <script>
+      function openTab(evt, tabName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+      <!-- Script JavaScript pour générer les cercles -->
+      // Fonction pour générer un nombre aléatoire entre min et max
+      function getRandomInt(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+      }
+
+      // Boucle pour créer 30 cercles
+      for (let i = 0; i < 30; i++) {
+        // Création d'un élément div pour le cercle
+        let cercle = document.createElement("div");
+        cercle.classList.add("cercle");
+
+        // Définition aléatoire de la taille et de la couleur du cercle
+        cercle.style.width = getRandomInt(10, 50) + "px";
+        cercle.style.height = cercle.style.width;
+        cercle.style.backgroundColor = i % 2 === 0 ? "#4CAF50" : "#000000"; // Alterne entre vert et noir
+
+        // Position aléatoire du cercle sur la page
+        cercle.style.top = getRandomInt(0, window.innerHeight) + "px";
+        cercle.style.left = getRandomInt(0, window.innerWidth) + "px";
+
+        // Ajout du cercle à la page
+        document.body.appendChild(cercle);
+      }
+      // Sélectionne le bouton par son ID
+      const bouton = document.getElementById("monBouton");
+
+      // Ajoute un écouteur d'événement pour le clic sur le bouton
+      bouton.addEventListener("click", function () {
+        // Message d'alerte qui s'affiche lors du clic sur le bouton
+        alert("bonjour et bienvenu sur ma page !");
+
+        // Demande à l'utilisateur de saisir une valeur
+        let reponse = prompt("avez aimez la page ?");
+
+        // Affiche un message en utilisant la valeur saisie
+        alert(";merci pour la visite, " + reponse + " !");
+      });
+    </script>
+  </body>
+</html>
